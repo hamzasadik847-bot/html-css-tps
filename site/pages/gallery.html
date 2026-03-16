@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberShield - Galerie photos">
+    <meta name="author" content="Hamza Sadik">
+    <meta property="og:title" content="CyberShield - Galerie">
+    <meta property="og:description" content="Galerie photos de CyberShield">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CyberShield - Galerie</title>
+</head>
+
+<body>
+    <header>
+        <h1>CyberShield</h1>
+        <p>Galerie</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Galerie avec srcset et picture -->
+        <section>
+            <h2>Nos locaux</h2>
+            <div class="gallery-grid">
+
+                <!-- picture : affiche différentes images selon la taille de l'écran -->
+                <picture>
+                    <source media="(min-width: 800px)" srcset="../images/office-large.jpg">
+                    <source media="(min-width: 400px)" srcset="../images/office-medium.jpg">
+                    <img src="../images/office-small.jpg" alt="Bureaux CyberShield">
+                </picture>
+
+                <!-- srcset : même image mais différentes résolutions -->
+                <img src="../images/team-photo.jpg"
+                     srcset="../images/team-photo.jpg 1x, ../images/team-photo.jpg 2x"
+                     alt="Équipe CyberShield">
+
+                <img src="../images/server-room.jpg"
+                     srcset="../images/server-room.jpg 400w, ../images/server-room.jpg 800w"
+                     sizes="(max-width: 600px) 100vw, 33vw"
+                     alt="Salle des serveurs">
+
+                <img src="../images/training.jpg" alt="Formation cybersécurité">
+
+                <img src="../images/audit.jpg" alt="Audit de sécurité">
+
+                <img src="../images/conference.jpg" alt="Conférence cybersécurité">
+
+            </div>
+        </section>
+
+        <!-- Vidéo de présentation -->
+        <section>
+            <h2>Vidéo de présentation</h2>
+            <video src="../images/presentation.mp4"
+                   autoplay
+                   muted
+                   loop
+                   width="100%">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>CyberShield</h4>
+                <p>Entreprise spécialisée en cybersécurité depuis 2018.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mentions légales</h4>
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CyberShield &mdash; Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+
+</html>

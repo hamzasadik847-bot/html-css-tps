@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+fieldset {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+legend {
+    font-weight: bold;
+    color: #1a1a2e;
+    font-size: 15px;
+    padding: 0 8px;
+    border-left: 3px solid #e94560;
+    padding-left: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+textarea {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #e94560;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+label:has(input[type="radio"]),
+label:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.cgu {
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+}
+
+button[type="submit"] {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #c73652;
+}
+
+footer {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    margin-top: 40px;
+}

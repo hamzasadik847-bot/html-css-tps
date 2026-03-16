@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire d'inscription">
+    <meta name="author" content="Hamza Sadik">
+    <link rel="stylesheet" href="style2.css">
+    <title>TP2 - Inscription</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulaire d'inscription</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <!-- Informations personnelles -->
+            <fieldset>
+                <legend>Informations personnelles</legend>
+
+                <label for="nom">Nom *
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="family-name" required>
+                </label>
+
+                <label for="prenom">Prénom *
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" autocomplete="given-name" required>
+                </label>
+
+                <label for="email">Email *
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com" autocomplete="email" required>
+                </label>
+
+                <label for="telephone">Téléphone *
+                    <input type="tel" id="telephone" name="telephone" placeholder="0612345678" pattern="0[6-7][0-9]{8}" autocomplete="tel" required>
+                </label>
+
+                <label for="naissance">Date de naissance *
+                    <input type="date" id="naissance" name="naissance" max="2008-01-01" required>
+                </label>
+            </fieldset>
+
+            <!-- Mot de passe -->
+            <fieldset>
+                <legend>Sécurité</legend>
+
+                <label for="motdepasse">Mot de passe *
+                    <input type="password" id="motdepasse" name="motdepasse" placeholder="Min 8 caractères" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" autocomplete="new-password" required>
+                </label>
+
+                <label for="confirmation">Confirmer le mot de passe *
+                    <input type="password" id="confirmation" name="confirmation" placeholder="Répétez le mot de passe" autocomplete="new-password" required>
+                </label>
+            </fieldset>
+
+            <!-- Localisation -->
+            <fieldset>
+                <legend>Localisation</legend>
+
+                <label for="pays">Pays *
+                    <input type="text" id="pays" name="pays" list="liste-pays" placeholder="Choisir un pays" required>
+                    <datalist id="liste-pays">
+                        <option value="Maroc">
+                        <option value="France">
+                        <option value="Algérie">
+                        <option value="Tunisie">
+                        <option value="Espagne">
+                    </datalist>
+                </label>
+            </fieldset>
+
+            <!-- Genre -->
+            <fieldset>
+                <legend>Genre</legend>
+
+                <label>
+                    <input type="radio" name="genre" value="homme" required> Homme
+                </label>
+                <label>
+                    <input type="radio" name="genre" value="femme"> Femme
+                </label>
+                <label>
+                    <input type="radio" name="genre" value="autre"> Autre
+                </label>
+            </fieldset>
+
+            <!-- Centres d'intérêt -->
+            <fieldset>
+                <legend>Centres d'intérêt</legend>
+
+                <label>
+                    <input type="checkbox" name="interets" value="cybersecurite"> Cybersécurité
+                </label>
+                <label>
+                    <input type="checkbox" name="interets" value="developpement"> Développement Web
+                </label>
+                <label>
+                    <input type="checkbox" name="interets" value="design"> Design
+                </label>
+                <label>
+                    <input type="checkbox" name="interets" value="reseau"> Réseaux
+                </label>
+            </fieldset>
+
+            <!-- Biographie -->
+            <fieldset>
+                <legend>Biographie</legend>
+
+                <label for="bio">Parlez-vous de vous
+                    <textarea id="bio" name="bio" placeholder="Écrivez quelques lignes..." maxlength="500" rows="5"></textarea>
+                </label>
+            </fieldset>
+
+            <!-- Photo -->
+            <fieldset>
+                <legend>Photo de profil</legend>
+
+                <label for="photo">Choisir une photo
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </label>
+            </fieldset>
+
+            <!-- CGU -->
+            <label class="cgu">
+                <input type="checkbox" name="cgu" required>
+                J'accepte les conditions générales d'utilisation *
+            </label>
+
+            <button type="submit">S'inscrire</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hamza Sadik</p>
+    </footer>
+</body>
+
+</html>

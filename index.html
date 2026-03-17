@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 3 - Travaux Pratiques HTML/CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .top-bar {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 30px 20px 24px;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #e94560;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: white;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border: 1px solid #c0d0f0;
+            border-radius: 8px;
+            background-color: #e8f0fe;
+            color: #1a56db;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #c7d7fc;
+        }
+
+        .card-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-section h2 {
+            font-size: 18px;
+            color: #1a1a2e;
+            margin-bottom: 20px;
+        }
+
+        .cards-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 220px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #e8f0fe;
+            color: #1a56db;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #777;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .card a {
+            color: #1a56db;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="container" style="padding-bottom:0">
+            <h1>Chapitre 3 - Travaux Pratiques HTML/CSS</h1>
+            <p class="subtitle">Liens vers les 3 TPs demandés sur le dernier slide du cours.</p>
+            <div class="btn-group" style="margin-bottom:0">
+                <a href="TP1.HTML" class="btn">TP1</a>
+                <a href="TP2.HTML" class="btn">TP2</a>
+                <a href="site/pages/about.html" class="btn">TP3</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-section">
+            <h2>Structure demandée</h2>
+            <div class="cards-grid">
+
+                <div class="card">
+                    <span class="badge">Débutant</span>
+                    <h3>TP1 - Présentation personnelle</h3>
+                    <p>Page CV/Portfolio avec structure sémantique, ancres internes, compétences et tableau.</p>
+                    <a href="TP1.HTML">Ouvrir TP1</a>
+                </div>
+
+                <div class="card">
+                    <span class="badge">Intermédiaire</span>
+                    <h3>TP2 - Formulaire complet</h3>
+                    <p>Formulaire d'inscription avec validations HTML5, patterns, règles d'âge et messages d'erreur.</p>
+                    <a href="TP2.HTML">Ouvrir TP2</a>
+                </div>
+
+                <div class="card">
+                    <span class="badge">Avancé</span>
+                    <h3>TP3 - Site vitrine multi-pages</h3>
+                    <p>Mini-site entreprise avec 5 pages, navigation commune, galerie responsive, vidéo et contact.</p>
+                    <a href="site/pages/about.html">Ouvrir TP3</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

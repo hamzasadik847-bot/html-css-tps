@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CyberShield - Contactez-nous">
-    <meta name="author" content="Hamza Sadik">
+    <meta name="description" content="Contactez CyberShield - Experts en cybersécurité">
+    <meta name="author" content="CyberShield">
     <meta property="og:title" content="CyberShield - Contact">
-    <meta property="og:description" content="Contactez l'équipe CyberShield">
+    <meta property="og:description" content="Contactez notre équipe de cybersécurité">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="../css/style.css">
     <title>CyberShield - Contact</title>
 </head>
 
 <body>
+
     <header>
         <h1>CyberShield</h1>
         <p>Contactez-nous</p>
@@ -22,7 +23,7 @@
     <nav>
         <ul>
             <li><a href="../index.html">Accueil</a></li>
-            <li><a href="about.html">A propos</a></li>
+            <li><a href="about.html">À propos</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Galerie</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
@@ -30,63 +31,60 @@
     </nav>
 
     <main>
+
         <section>
             <h2>Formulaire de contact</h2>
             <div class="contact-grid">
 
-                <!-- Formulaire -->
-                <form action="#" method="post" class="contact-form">
-                    <label for="nom">Nom *
-                        <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="name" required>
-                    </label>
-                    <label for="email">Email *
-                        <input type="email" id="email" name="email" placeholder="exemple@email.com" autocomplete="email" required>
-                    </label>
-                    <label for="telephone">Téléphone
-                        <input type="tel" id="telephone" name="telephone" placeholder="0612345678" autocomplete="tel">
-                    </label>
-                    <label for="sujet">Sujet *
-                        <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message" required>
-                    </label>
-                    <label for="message">Message *
-                        <textarea id="message" name="message" placeholder="Votre message..." rows="5" required></textarea>
-                    </label>
-                    <button type="submit">Envoyer</button>
+                <div class="contact-info">
+                    <p><strong>Adresse</strong><br>123 Boulevard Mohammed V<br>Casablanca 20000, Maroc</p>
+                    <p><strong>Téléphone</strong><br>+212 522 000 000</p>
+                    <p><strong>Email</strong><br>contact@cybershield.ma</p>
+                    <p><strong>Horaires</strong><br>Lundi – Vendredi<br>9h00 – 18h00</p>
+                </div>
+
+                <form class="contact-form" action="#" method="post">
+                    <input type="text" name="nom" placeholder="Votre nom" autocomplete="name" required>
+                    <input type="email" name="email" placeholder="Votre email" autocomplete="email" required>
+                    <input type="tel" name="telephone" placeholder="Votre téléphone" autocomplete="tel">
+                    <input type="text" name="sujet" placeholder="Sujet" required>
+                    <textarea name="message" placeholder="Votre message..." required></textarea>
+                    <button type="submit">Envoyer le message</button>
                 </form>
 
-                <!-- Infos contact -->
-                <div class="contact-info">
-                    <p><strong>Adresse</strong><br>123 Rue Mohammed V, Casablanca, Maroc</p>
-                    <p><strong>Téléphone</strong><br>+212 6 12 34 56 78</p>
-                    <p><strong>Email</strong><br>contact@cybershield.ma</p>
-                    <p><strong>Horaires</strong><br>Lun - Ven : 9h - 18h</p>
-                </div>
             </div>
 
-            <!-- Carte Google Maps iframe -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8!2d-7.5898!3d33.5731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzIzLjIiTiA3wrAzNSczNS4zIlc!5e0!3m2!1sfr!2sma!4v1234567890"
-                title="Localisation CyberShield - Casablanca"
+                title="Localisation CyberShield Casablanca"
                 allowfullscreen
                 loading="lazy">
             </iframe>
         </section>
+
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-col">
                 <h4>CyberShield</h4>
-                <p>Entreprise spécialisée en cybersécurité depuis 2018.</p>
+                <p>Experts en cybersécurité<br>basés à Casablanca, Maroc.</p>
             </div>
             <div class="footer-col">
                 <h4>Navigation</h4>
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="about.html">À propos</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Galerie</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:contact@cybershield.ma">contact@cybershield.ma</a></li>
+                    <li><a href="tel:+212522000000">+212 522 000 000</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -94,14 +92,13 @@
                 <ul>
                     <li><a href="#">Politique de confidentialité</a></li>
                     <li><a href="#">Conditions d'utilisation</a></li>
-                    <li><a href="#">Mentions légales</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 CyberShield &mdash; Tous droits réservés</p>
+            <p>&copy; 2026 CyberShield — Tous droits réservés</p>
         </div>
     </footer>
-</body>
 
+</body>
 </html>

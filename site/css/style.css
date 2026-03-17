@@ -15,18 +15,33 @@ header {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
 
 header h1 {
     font-size: 48px;
     letter-spacing: 3px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 header p {
-    font-size: 20px;
+    font-size: 18px;
     color: #e94560;
+    margin-bottom: 24px;
+}
+
+header a {
+    display: inline-block;
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+header a:hover {
+    background-color: #c73652;
 }
 
 /* ===== NAV ===== */
@@ -72,8 +87,8 @@ section {
     background: white;
     padding: 40px;
     margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     border-left: 4px solid #e94560;
 }
 
@@ -85,52 +100,7 @@ section h2 {
     border-bottom: 1px solid #f0f0f0;
 }
 
-section p {
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 12px;
-}
-
-/* ===== HERO (index) ===== */
-.hero {
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
-    color: white;
-    text-align: center;
-    padding: 80px 40px;
-    border-radius: 8px;
-    border-left: none;
-    margin-bottom: 30px;
-}
-
-.hero h2 {
-    font-size: 36px;
-    color: white;
-    border-bottom: none;
-    margin-bottom: 16px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #ccc;
-    max-width: 600px;
-    margin: 0 auto 24px;
-}
-
-.hero a {
-    background-color: #e94560;
-    color: white;
-    text-decoration: none;
-    padding: 14px 32px;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.hero a:hover {
-    background-color: #c73652;
-}
-
-/* ===== SERVICES GRID (index) ===== */
+/* ===== SERVICES GRID ===== */
 .services-grid {
     display: flex;
     gap: 20px;
@@ -144,16 +114,19 @@ section p {
     padding: 24px;
     border-radius: 8px;
     border-top: 3px solid #e94560;
+    text-align: center;
 }
 
 .service-card h3 {
+    font-size: 16px;
     color: #1a1a2e;
     margin-bottom: 10px;
 }
 
 .service-card p {
-    font-size: 14px;
-    margin: 0;
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
 }
 
 /* ===== TEMOIGNAGES ===== */
@@ -163,86 +136,25 @@ section p {
     flex-wrap: wrap;
 }
 
-blockquote {
+.temoignage {
     flex: 1;
-    min-width: 200px;
+    min-width: 220px;
     background: #f8f9fa;
-    padding: 24px;
+    padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #e94560;
+    border-left: 3px solid #e94560;
+}
+
+.temoignage p {
     font-style: italic;
     color: #555;
-}
-
-blockquote cite {
-    display: block;
-    margin-top: 12px;
-    font-style: normal;
-    font-weight: bold;
-    color: #1a1a2e;
-}
-
-/* ===== FIGURE (about) ===== */
-.equipe-grid {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
-figure {
-    flex: 1;
-    min-width: 160px;
-    text-align: center;
-}
-
-figure img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #e94560;
-}
-
-figcaption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-}
-
-figcaption strong {
-    display: block;
-    color: #1a1a2e;
-    font-size: 16px;
-}
-
-/* ===== DETAILS/SUMMARY (services) ===== */
-details {
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
+    line-height: 1.7;
     margin-bottom: 12px;
-    overflow: hidden;
 }
 
-summary {
-    background: #1a1a2e;
-    color: white;
-    padding: 14px 20px;
-    cursor: pointer;
-    font-weight: bold;
-    list-style: none;
-}
-
-summary:hover {
-    background: #0f3460;
-}
-
-details[open] summary {
-    border-bottom: 2px solid #e94560;
-}
-
-details p {
-    padding: 16px 20px;
-    margin: 0;
+.temoignage strong {
+    color: #1a1a2e;
+    font-size: 14px;
 }
 
 /* ===== TABLE TARIFS ===== */
@@ -253,8 +165,8 @@ table {
 
 th, td {
     border: 1px solid #e0e0e0;
-    padding: 12px 16px;
-    text-align: center;
+    padding: 14px 18px;
+    text-align: left;
 }
 
 th {
@@ -266,26 +178,105 @@ tbody tr:hover {
     background-color: #f9f9f9;
 }
 
-td.highlight {
-    background-color: #fff3f5;
+/* ===== EQUIPE ===== */
+.equipe-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.equipe-grid figure {
+    text-align: center;
+    width: 180px;
+}
+
+.equipe-grid img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #e94560;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.equipe-grid figcaption {
+    font-size: 14px;
+    color: #555;
+}
+
+.equipe-grid figcaption strong {
+    display: block;
+    color: #1a1a2e;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+/* ===== DETAILS/SUMMARY ===== */
+details {
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+summary {
+    padding: 16px 20px;
+    cursor: pointer;
     font-weight: bold;
+    color: #1a1a2e;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::after {
+    content: "+";
+    font-size: 20px;
     color: #e94560;
 }
 
-/* ===== GALERIE ===== */
+details[open] summary::after {
+    content: "−";
+}
+
+details p {
+    padding: 0 20px 16px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ===== GALLERY ===== */
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 }
 
-.gallery-grid picture,
+.gallery-grid img,
+.gallery-grid picture {
+    flex: 1;
+    min-width: 250px;
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 .gallery-grid img {
-    width: calc(33% - 12px);
-    height: 200px;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
-    border-radius: 6px;
-    border: none;
+    border-radius: 8px;
+    display: block;
+}
+
+/* ===== VIDEO ===== */
+video {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 /* ===== CONTACT ===== */
@@ -295,36 +286,28 @@ td.highlight {
     flex-wrap: wrap;
 }
 
-.contact-form {
-    flex: 1;
-    min-width: 280px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
 .contact-info {
     flex: 1;
     min-width: 200px;
 }
 
 .contact-info p {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    color: #555;
+    line-height: 1.8;
 }
 
-label {
+.contact-form {
+    flex: 2;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    font-size: 14px;
-    color: #555;
+    gap: 14px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    padding: 10px 14px;
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 16px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
@@ -332,27 +315,28 @@ textarea {
     transition: border-color 0.3s;
 }
 
-input:focus,
-textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     border-color: #e94560;
 }
 
-textarea {
+.contact-form textarea {
+    height: 120px;
     resize: vertical;
 }
 
-button[type="submit"] {
+.contact-form button {
     background-color: #e94560;
     color: white;
     border: none;
-    padding: 12px;
-    border-radius: 6px;
+    padding: 14px;
+    border-radius: 8px;
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
+.contact-form button:hover {
     background-color: #c73652;
 }
 
@@ -360,8 +344,8 @@ iframe {
     width: 100%;
     height: 300px;
     border: none;
-    border-radius: 6px;
-    margin-top: 20px;
+    border-radius: 8px;
+    margin-top: 24px;
 }
 
 /* ===== FOOTER ===== */
@@ -369,7 +353,6 @@ footer {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
     padding: 40px 20px;
-    margin-top: 40px;
 }
 
 .footer-content {
@@ -378,6 +361,7 @@ footer {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
@@ -410,14 +394,13 @@ footer {
     color: #aaa;
     font-size: 14px;
     line-height: 1.7;
-    margin: 0;
 }
 
 .footer-bottom {
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid #2a2a4e;
     text-align: center;
     color: #666;
     font-size: 13px;

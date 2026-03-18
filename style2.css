@@ -22,6 +22,33 @@ header h1 {
     letter-spacing: 2px;
 }
 
+nav {
+    background-color: #16213e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #e94560;
+    border-bottom: 3px solid #e94560;
+}
+
 main {
     max-width: 700px;
     margin: 40px auto;
